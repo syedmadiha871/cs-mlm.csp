@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="questionnaire.css">
+    <link rel="icon" href="images/logo.jpeg">
+    <title>QUESTIONNAIRE</title>
+</head>
+<body>
+        <div class="logo">
+            <div class="img">
+                <img src="images/gist.jpg" width="135">
+            </div>
+        </div>
+        <div class="text">
+            <p><strong><font color="red"><font size="5px">GEETHANJALI INSTISTUE OF SCIENCE AND TECHNOLOGY</font></font></strong></p>
+            <p><font color="#444C38"><font size="3px">A unit of USHODAYA EDUCATIONAL SOCIETY</font></font></p>
+            <p><strong><font color="#0039a6"><font size="3px"><i>Approved by AICTE, New Delhi & Permanently Affliated to JNTUA, Ananthapuram</i><br>NAAC 'A' Grade Accredited Institution, An ISO 9001:2015 certified Institution<br>Recogized under Sec. 2(f) & 12(B) of UGC Act, 1956<br>3rd Mile, Bombay Highway, Gangavaram(V), Kovur(M), SPSR Nellore(Dt) 524137</font></font></strong></p>
+        </div>
+    <div class="banner">
+        <div class="navbar">
+            <nav>
+            <ul id="menuList">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="abstract.html">ABSTRACT</a></li>
+                <li><a href="introduction.html">INTRODUCTION</a></li>
+                <li><a href="questionnaire.html">QUESTIONNAIRE</a></li>
+                <li><a href="surveydata.html">SURVEY DATA</a></li>
+                <li><a href="conclusion.html">CONCLUSION</a></li>
+                <li><a href="activity.html">ACTIVITY LOG</a></li>
+                <li><a href="surveypictures.html">SURVEY PICTURES</a></li>
+                <li><a href="members.html">MEMBERS</a></li>
+            </ul>
+            </nav>
+            <img src="images/menu2.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+        <form id="governmentForm">
+            <h1>QUESTIONNAIRE FORM</h1><br>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div><br>
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+            </div><br>
+            <div>
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            <div><br>
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea>
+            </div><br>
+            <div>
+                <label for="mobile">Mobile Number:</label>
+                <input type="number" id="mobile" name="mobile" maxlength="10" required>
+            </div><br>
+            <div>
+                <label for="aadhaar">Aadhaar Number:</label>
+                <input type="number" id="aadhaar" name="aadhaar" maxlength="12" required>
+            </div><br>
+            <div>
+                <label>Are you getting Health Insurance?</label> <br>
+                <input type="radio" id="yes" name="Health Insurance" value="yes" required onclick="showSchemes()">
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="Health Insurance" value="no">
+                <label for="no">No</label>
+            </div>
+            <div id="schemeOptions" style="display: none;">
+                <label>Select the schemes you are availing:</label>
+                <div class="scheme-options-column">
+                    <div class="scheme-option">
+                        <input type="checkbox" id="jvd" name="schemes" value="JVD/Ammavodi" class="scheme-checkbox">
+                        <label for="jvd">JVD/Ammavodi</label>
+                    </div>
+                    <div class="scheme-option">
+                        <input type="checkbox" id="ysr" name="schemes" value="YSR Arogya Sri Scheme" class="scheme-checkbox">
+                        <label for="ysr">YSR Arogya Sri Scheme</label>
+                    </div>
+                    <div class="scheme-option">
+                        <input type="checkbox" id="pension" name="schemes" value="AP Pension Scheme" class="scheme-checkbox">
+                        <label for="pension">AP Pension Scheme</label>
+                    </div>
+                    <div class="scheme-option">
+                        <input type="checkbox" id="vahana" name="schemes" value="AP Vahana Mitra" class="scheme-checkbox">
+                        <label for="vahana">AP Vahana Mitra</label>
+                    </div>
+                </div>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="questionnaire.js"></script>
+</body>
+</html>
