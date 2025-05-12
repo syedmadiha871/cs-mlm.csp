@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="questionnaire.css">
+    <link rel="icon" href="images/logo.jpeg">
+    <title>QUESTIONNAIRE</title>
+</head>
+<body>
+        <div class="logo">
+            <div class="img">
+                <img src="images/gist.jpg" width="135">
+            </div>
+        </div>
+        <div class="text">
+            <p><strong><font color="red"><font size="5px">GEETHANJALI INSTISTUE OF SCIENCE AND TECHNOLOGY</font></font></strong></p>
+            <p><font color="#444C38"><font size="3px">A unit of USHODAYA EDUCATIONAL SOCIETY</font></font></p>
+            <p><strong><font color="#0039a6"><font size="3px"><i>Approved by AICTE, New Delhi & Permanently Affliated to JNTUA, Ananthapuram</i><br>NAAC 'A' Grade Accredited Institution, An ISO 9001:2015 certified Institution<br>Recogized under Sec. 2(f) & 12(B) of UGC Act, 1956<br>3rd Mile, Bombay Highway, Gangavaram(V), Kovur(M), SPSR Nellore(Dt) 524137</font></font></strong></p>
+        </div>
+    <div class="banner">
+        <div class="navbar">
+            <nav>
+            <ul id="menuList">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="abstract.html">ABSTRACT</a></li>
+                <li><a href="introduction.html">INTRODUCTION</a></li>
+                <li><a href="questionnaire.html">QUESTIONNAIRE</a></li>
+                <li><a href="surveydata.html">SURVEY DATA</a></li>
+                <li><a href="conclusion.html">CONCLUSION</a></li>
+                <li><a href="activity.html">ACTIVITY LOG</a></li>
+                <li><a href="surveypictures.html">SURVEY PICTURES</a></li>
+                <li><a href="members.html">MEMBERS</a></li>
+            </ul>
+            </nav>
+            <img src="images/menu2.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+        <form id="governmentForm">
+            <h1>QUESTIONNAIRE FORM</h1><br>
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Insurance Survey</title>
+</head>
+<body>
+    <h1>Health Insurance Survey</h1><br><br>
+    <form action="#" method="post">
+        <h2>1. Personal Details</h2>
+        <label for="name">a. What is your name?</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="address">b. What is your address?</label><br>
+        <input type="text" id="address" name="address" required><br><br>
+
+        <label for="aadhar">c. What is Your Aadhar Number?</label><br>
+        <input type="text" id="aadhar" name="aadhar" required><br><br>
+
+        <label for="age">d. What is your age?</label><br>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <label for="mobile">e. What is Your Mobile Number?</label><br>
+        <input type="tel" id="mobile" name="mobile" required><br><br>
+
+        <h2>2. Do You Currently Have Health Insurance?</h2>
+        <label>
+            <input type="radio" name="health_insurance" value="yes" required> Yes
+        </label>
+        <label>
+            <input type="radio" name="health_insurance" value="no"> No
+        </label><br><br>
+
+        <label for="insurance_company">3. In which company do you have Health Insurance?</label><br>
+        <input type="text" id="insurance_company" name="insurance_company"><br><br>
+
+        <label for="insurance_type">4. What type of health insurance do you have?</label><br>
+        <select id="insurance_type" name="insurance_type">
+            <option value="employer_provided">Employer-provided</option>
+            <option value="private">Private</option>
+            <option value="government_sponsored">Government-sponsored</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="coverage_duration">5. How long have you been covered under your current health insurance plan?</label><br>
+        <select id="coverage_duration" name="coverage_duration">
+            <option value="less_than_a_year">Less than a year</option>
+            <option value="1_3_years">1-3 years</option>
+            <option value="3_5_years">3-5 years</option>
+            <option value="5_plus_years">5+ years</option>
+        </select><br><br>
+
+        <h2>6. Have you ever delayed or avoided medical care due to cost?</h2>
+        <label>
+            <input type="radio" name="delayed_care" value="yes" required> Yes
+        </label>
+        <label>
+            <input type="radio" name="delayed_care" value="no"> No
+        </label><br><br>
+
+        <h2>7. Does your plan include Diabetes coverage?</h2>
+        <label>
+            <input type="radio" name="diabetes_coverage" value="yes" required> Yes
+        </label>
+        <label>
+            <input type="radio" name="diabetes_coverage" value="no"> No
+        </label><br><br>
+
+        <h2>8. How well do you understand the terms and benefits of your health insurance plan?</h2>
+        <textarea name="understanding" rows="4" cols="50" required></textarea><br><br>
+
+        <h2>9. Have you ever claimed?</h2>
+        <label>
+            <input type="radio" name="claimed" value="yes" required> Yes
+        </label>
+        <label>
+            <input type="radio" name="claimed" value="no"> No
+        </label><br><br>
+
+        <h2>10. Have you ever had a claim denied by your insurance provider?</h2>
+        <label>
+            <input type="radio" name="claim_denied" value="yes" required> Yes
+        </label>
+        <label>
+            <input type="radio" name="claim_denied" value="no"> No
+        </label><br><br>
+         <label for="claimProcess">11. How convenient is the process of filing claims and getting reimbursements?</label>
+    <textarea id="claimProcess" name="claimProcess" placeholder="Please describe your experience..."></textarea>
+    <label>12. Are there any differences in health insurance usage between urban and rural populations?</label>
+    <div class="radio-group">
+      <label><input type="radio" name="urbanRural" value="yes" /> Yes</label>
+      <label><input type="radio" name="urbanRural" value="no" /> No</label>
+    </div>
+    <label>13. Are there any gender-based disparities in health insurance utilization?</label>
+    <div class="radio-group">
+      <label><input type="radio" name="genderDisparities" value="yes" /> Yes</label>
+      <label><input type="radio" name="genderDisparities" value="no" /> No</label>
+
+
+    <script src="questionnaire.js"></script>
+</body>
+</html>
